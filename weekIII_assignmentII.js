@@ -20,9 +20,11 @@ findGoalKeeper(players1, team1Name);
 findGoalKeeper(players2, team2Name);
 console.log("===========================================================task2 ends here"); //task2 ends here
 
+
 let allPlayers = [...players1, ...players2];
 console.log(allPlayers);
 console.log("===========================================================task3 ends here"); //task3 ends here
+
 
 let players1Final = players1;
 players1Final.push("Thiago", "Coutinho", "Perisic");
@@ -50,12 +52,13 @@ function printGoals(scoredPlayer = "'Davies','Muller','Lewandowski','Kimmich'") 
   console.log(`Total number of goals scored are: ${playersMadeGoal.length}`);
   console.log("Players scored goals are:");
   playersMadeGoal.forEach(element => {
-    console.log(element);
+    console.log(element.replaceAll("'",""));
   });
 }
 printGoals();
 printGoals(scoredPlayer);
 console.log("===========================================================task6 ends here"); //task6 ends here
+
 
 let oddsValue=[team1,draw,team2];
 let odds = [
