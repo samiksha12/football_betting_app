@@ -34,9 +34,8 @@ console.log("===========================================================task4 en
 
 
 
-let team1 = game.odds.team1;
-let draw = game.odds.x;
-let team2 = game.odds.team2;
+let {team1,x,team2} = game.odds;
+let draw = x;
 console.log(`team1: ${team1}`);
 console.log(`draw: ${draw}`);
 console.log(`team2: ${team2}`);
